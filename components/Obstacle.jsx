@@ -8,8 +8,8 @@ const Obstacle = ({ left, height, width, height_neg, minGapHeight }) => {
 		obstacle_top: useAnimatedStyle(() => {
 			return {
 				left: left.value,
-				height: height.value,
-				top: 0 - height_neg.value,
+				height: height.value - height_neg.value,
+				top: 0,
 			}
 		}),
 		obstacle_bottom: useAnimatedStyle(() => {
